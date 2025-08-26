@@ -156,19 +156,19 @@ def test_model_handles_missing_values():
 
 Through years of practice (and plenty of mistakes), the development community has distilled TDD into five core rules:
 
-## 6.1 Test First, Code Later
+**1. Test First, Code Later**  
 This seems obvious but is harder than it sounds. Your natural instinct is to solve the problem, then test it. Resist this urge.
 
-## 6.2 Write the Minimum Code to Pass
+**2. Write the Minimum Code to Pass**  
 Don't try to build the perfect solution immediately. Get to green first, then make it beautiful.
 
-## 6.3 One Failing Test at a Time
+**3. One Failing Test at a Time**  
 Multiple failing tests create confusion and make debugging harder. Focus on one thing at a time.
 
-## 6.4 Pass, Then Refactor
+**4. Pass, Then Refactor**  
 Never refactor on red. A passing test is your permission slip to improve the code.
 
-## 6.5 If It Passes Without Implementation, Question It
+**5. If It Passes Without Implementation, Question It**  
 A test that passes without any code either isn't testing the right thing or the functionality already exists.
 
 # 7. Mastering Pytest: Your Python Testing Toolkit
