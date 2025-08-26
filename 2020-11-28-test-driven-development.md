@@ -12,7 +12,7 @@ Wrong. Dead wrong.
 
 What I discovered next revolutionized not just how I write code, but how I think about problems entirely. This is the story of **Test-Driven Development (TDD)**—a methodology that might seem counterintuitive at first, but will save you countless hours of debugging and give you the confidence to refactor fearlessly.
 
-## What is Test-Driven Development?
+# 1. What is Test-Driven Development?
 
 **Test-Driven Development (TDD)** is a software development approach where you write tests before writing the actual code. But it's more than just switching the order—it's a completely different way of thinking about your code's design and functionality.
 
@@ -20,32 +20,32 @@ In TDD, you start by writing a test that defines what your code should do, watch
 
 Think of it as having a conversation with your future self: "Here's what this function should do," you tell yourself through the test, then you build exactly what you promised.
 
-## The TDD Cycle: Red, Green, Refactor
+# 2. The TDD Cycle: Red, Green, Refactor
 
 ![](/img/test-driven-development/tdd_cycle.png)
 
 The TDD process follows a simple three-step cycle that becomes addictively satisfying once you get the hang of it:
 
-### **Red Phase: Write a Failing Test**
+## 2.1 Red Phase: Write a Failing Test
 You start by writing a test for functionality that doesn't exist yet. The test will fail because there's no code to make it pass. This failure is actually a good thing—it confirms that your test is working and that you're testing the right thing.
 
 *If your test passes without any implementation, something's wrong. Either the functionality already exists, or your test isn't testing what you think it is.*
 
-### **Green Phase: Make It Pass**
+## 2.2 Green Phase: Make It Pass
 Now you write the minimal amount of code needed to make your test pass. Notice I said "minimal"—this isn't the time for elegant solutions or optimization. Your only goal is to turn that red test green as quickly as possible.
 
-### **Refactor Phase: Make It Right**
+## 2.3 Refactor Phase: Make It Right
 With a passing test as your safety net, you can now refactor your code to make it clean, efficient, and maintainable. The test ensures that your refactoring doesn't break the functionality.
 
 *Pro tip: Each cycle should take no more than 10 minutes. If you find yourself spending longer, you're probably trying to implement too much at once.*
 
-## Building Your Testing Foundation
+# 3. Building Your Testing Foundation
 
 Before diving deeper into TDD, let's establish the testing landscape. Think of testing as a pyramid—each level serves a different purpose and has different characteristics.
 
 ![](/img/test-driven-development/pyramid.png)
 
-### Unit Tests: The Foundation
+## 3.1 Unit Tests: The Foundation
 
 Unit tests are like checking individual LEGO blocks before building your castle. They test the smallest pieces of your application—typically individual functions or methods—in isolation.
 
@@ -66,7 +66,7 @@ def test_remove_outliers():
 
 The beauty of unit tests is their speed and precision. When they fail, you know exactly where the problem is.
 
-### Integration Tests: Testing the Connections
+## 3.2 Integration Tests: Testing the Connections
 
 Integration tests verify that different components work together harmoniously. In a data science context, this might mean testing that your data preprocessing pipeline correctly feeds into your model training process.
 
@@ -75,7 +75,7 @@ Integration tests verify that different components work together harmoniously. I
 - Can the model training process handle the cleaned data and produce results?
 - Do the different stages of your pipeline communicate effectively?
 
-### End-to-End (UI) Tests: The Full Journey
+## 3.3 End-to-End (UI) Tests: The Full Journey
 
 These tests simulate the complete user experience. For a machine learning product, this might mean testing whether your model produces sensible business outcomes when fed real-world data.
 
@@ -84,11 +84,11 @@ These tests simulate the complete user experience. For a machine learning produc
 - Does the entire pipeline from raw data to final prediction work in production?
 - Can stakeholders understand and trust the results?
 
-## When TDD Shines (And When It Doesn't)
+# 4. When TDD Shines (And When It Doesn't)
 
 Here's the truth nobody tells you: TDD isn't always the answer. Like any tool, it's incredibly powerful in the right situations and potentially counterproductive in others.
 
-### TDD is Your Best Friend When:
+## 4.1 TDD is Your Best Friend When:
 
 **Building Analytics Pipelines**
 Data pipelines are notorious for breaking in unexpected ways. TDD helps you catch issues before they cascade through your entire system.
@@ -104,7 +104,7 @@ Before refactoring old code, write tests to document its current behavior. This 
 **Collaborating in Teams**
 Tests serve as a safety net when multiple developers are working on the same codebase. They catch integration issues early and provide confidence during code reviews.
 
-### Skip TDD When:
+## 4.2 Skip TDD When:
 
 **Exploring Unknown Data Sources**
 When you're doing initial data exploration to understand what you're working with, the overhead of writing tests can slow down discovery.
@@ -115,17 +115,17 @@ For throwaway code meant to validate an approach, the time investment in TDD mig
 **Working on Well-Understood, Stable Components**
 If you're working with a mature, stable data source that rarely changes, extensive testing might be overkill.
 
-## The AAA Pattern: Your Testing Template
+# 5. The AAA Pattern: Your Testing Template
 
 Every good test follows the same structure, known as AAA (Arrange, Act, Assert). Think of it as the grammar of testing.
 
-### Arrange: Set Up Your Test Data
+## 5.1 Arrange: Set Up Your Test Data
 Prepare everything your test needs to run. This is your input data, mock objects, and initial conditions.
 
-### Act: Execute the Code Under Test
+## 5.2 Act: Execute the Code Under Test
 Run the specific function or method you're testing.
 
-### Assert: Verify the Results
+## 5.3 Assert: Verify the Results
 Check that the output matches your expectations.
 
 Here's a more complex example from a real data science scenario:
@@ -152,30 +152,30 @@ def test_model_handles_missing_values():
     assert len(processed_data) == len(training_data)  # No rows dropped
 ```
 
-## The Five Commandments of TDD
+# 6. The Five Commandments of TDD
 
 Through years of practice (and plenty of mistakes), the development community has distilled TDD into five core rules:
 
-### 1. Test First, Code Later
+## 6.1 Test First, Code Later
 This seems obvious but is harder than it sounds. Your natural instinct is to solve the problem, then test it. Resist this urge.
 
-### 2. Write the Minimum Code to Pass
+## 6.2 Write the Minimum Code to Pass
 Don't try to build the perfect solution immediately. Get to green first, then make it beautiful.
 
-### 3. One Failing Test at a Time
+## 6.3 One Failing Test at a Time
 Multiple failing tests create confusion and make debugging harder. Focus on one thing at a time.
 
-### 4. Pass, Then Refactor
+## 6.4 Pass, Then Refactor
 Never refactor on red. A passing test is your permission slip to improve the code.
 
-### 5. If It Passes Without Implementation, Question It
+## 6.5 If It Passes Without Implementation, Question It
 A test that passes without any code either isn't testing the right thing or the functionality already exists.
 
-## Mastering Pytest: Your Python Testing Toolkit
+# 7. Mastering Pytest: Your Python Testing Toolkit
 
 For Python developers, **pytest** is the gold standard for testing frameworks. It's designed to make testing as painless as possible.
 
-### Getting Started is Simple
+## 7.1 Getting Started is Simple
 
 ```python
 # test_example.py
@@ -186,7 +186,7 @@ def test_basic_math():
 
 That's it. No complex setup, no inheritance from test classes—just functions that start with `test_` and use Python's built-in `assert` statement.
 
-### Pytest Fixtures: Reusable Test Components
+## 7.2 Pytest Fixtures: Reusable Test Components
 
 Fixtures solve the problem of test data setup. Instead of creating the same data in every test, you create it once and reuse it.
 
@@ -216,7 +216,7 @@ def test_purchase_prediction(sample_dataset):
     assert all(pred in [0, 1] for pred in predictions)
 ```
 
-### Parametrized Tests: Test Multiple Scenarios
+## 7.3 Parametrized Tests: Test Multiple Scenarios
 
 When you want to test the same logic with different inputs, parametrization saves time and ensures comprehensive coverage.
 
@@ -234,13 +234,13 @@ def test_calculate_mean(input_data, expected_output):
 
 This single test function actually runs four separate tests, each with different inputs and expected outputs.
 
-## The Continuous Integration Connection
+# 8. The Continuous Integration Connection
 
 TDD pairs beautifully with Continuous Integration (CI) and Continuous Deployment (CD). Here's why they're perfect together:
 
 ![](/img/test-driven-development/testing.png)
 
-### Continuous Integration: Your Code's Health Check
+## 8.1 Continuous Integration: Your Code's Health Check
 
 Every time you push code to your repository, CI automatically:
 1. Runs all your tests
@@ -249,13 +249,13 @@ Every time you push code to your repository, CI automatically:
 
 This means bugs are caught within minutes, not days or weeks later when they're much harder to fix.
 
-### Continuous Deployment: Confident Releases
+## 8.2 Continuous Deployment: Confident Releases
 
 With a comprehensive test suite, you can deploy to production with confidence. If all tests pass, you know your changes haven't broken existing functionality.
 
 **Real-world benefit:** Instead of manual testing taking days, automated tests run in minutes. Instead of discovering bugs in production, you find them in development where they're cheap to fix.
 
-## A Personal Success Story
+# 9. A Personal Success Story
 
 Let me share how TDD transformed one of my most challenging projects. We were building a recommendation engine for an e-commerce platform—complex algorithms, multiple data sources, and strict performance requirements.
 
@@ -270,7 +270,7 @@ The transformation was remarkable. Development became faster because we always k
 
 **The result:** We delivered the project two weeks ahead of schedule with 40% fewer bugs in production.
 
-## Beyond the Hype: TDD's Real Impact
+# 10. Beyond the Hype: TDD's Real Impact
 
 Here's what TDD actually gives you (not the marketing fluff, but the real benefits):
 
@@ -284,7 +284,7 @@ Here's what TDD actually gives you (not the marketing fluff, but the real benefi
 
 **Reduced Production Bugs:** Catching issues in development is exponentially cheaper than fixing them in production.
 
-## Your TDD Journey Starts Now
+# 11. Your TDD Journey Starts Now
 
 Test-Driven Development isn't just a methodology—it's a mindset shift that will make you a more confident, efficient developer. You'll write better code, debug faster, and sleep better knowing your changes won't break production.
 
@@ -296,7 +296,7 @@ Test-Driven Development isn't just a methodology—it's a mindset shift that wil
 
 The journey from test-skeptic to test-advocate is one of the most rewarding transformations you'll experience as a developer. Your future self will thank you for starting today.
 
-## Further Reading and Resources
+# 12. Further Reading and Resources
 
 **Essential Articles:**
 - [TDD for Data Science](https://towardsdatascience.com/tdd-datascience-689c98492fcc) - Applying TDD principles to machine learning projects
