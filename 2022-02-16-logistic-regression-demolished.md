@@ -1,10 +1,3 @@
----
-title: Machine Learning - Demolished!
-subtitle: Logistic Regression Demolished!
-katex: true
-tags: [machine-learning, mathematics, logistic-regression, classification]
----
-
 Logistic regression is a powerful and versatile statistical technique that has been widely used in various fields, including machine learning, statistics, and social sciences. It is a simple yet effective method for modeling the relationship between a binary response variable and one or more predictor variables.
 
 The beauty of logistic regression lies in its ability to provide interpretable results, while still being flexible enough to handle complex data. By analyzing the coefficients of the model, we can gain insights into the factors that are driving the outcomes of interest and make informed decisions based on these insights.

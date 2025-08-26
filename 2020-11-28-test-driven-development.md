@@ -1,9 +1,3 @@
----
-title: Test-Driven Development like a pro
-subtitle: Exploring my software developer self
-tags: [tdd, data-science, test-driven-development, unit-test]
----
-
 ## Introduction
 **Test-Driven Development (TDD)** is a software development approach in which test cases are developed to specify and validate what the code will do. In simple terms, test cases for each functionality are created and tested first and if the test fails then the new code is written in order to pass the test and make the code simple and bug-free.
 

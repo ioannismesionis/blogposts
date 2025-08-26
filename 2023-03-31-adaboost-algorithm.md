@@ -1,10 +1,3 @@
----
-title: AdaBoost for the win!
-subtitle: Adaptive Boosting - The first of its kind!
-katex: true
-tags: [machine-learning, boosting, decision-trees, random-forest]
----
-
 AdaBoost (Adaptive Boosting) is a popular boosting algorithm that combines multiple weak classifiers to create a strong classifier. <br>
 The algorithm works by iteratively adjusting the weights of the training instances and focusing more on the misclassified instances in each iteration using a weighted sampled distribution.
 

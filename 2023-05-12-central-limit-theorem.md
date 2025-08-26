@@ -1,10 +1,3 @@
----
-title: Central Limit Theorem - A Magic Wand for Inference
-subtitle: How the CLT turns any data into gold!
-katex: true
-tags: [statistics, central-limit-theorem, normal-distribution]
----
-
 The central limit theorem (CLT) is a powerful tool that allows us to make inferences about populations, even if we don't know the exact distribution of the population. Just wave your wand (i.e., use the CLT) over a sample of data, and the distribution of the sample means will be approximately normally distributed, regardless of the shape of the population distribution.
 
 ## Central Limit Theorem

@@ -1,10 +1,3 @@
----
-title: The Art of Comparing Apples to Oranges!
-subtitle: Relative Estimation for Data Science teams.
-katex: true
-tags: [scrum, relative-estimation, sprint-planning]
----
-
 Relative estimation is a concept that simply means "comparing two things to each other." If you've ever said something like, "Hey, this tree is twice as tall as that tree," you already know how to do it.
 
 In the world of software development and data science projects, estimating work has always been challenging. Traditional approaches often fall short because they try to predict absolute time requirements, which can be highly variable depending on countless factors. Relative estimation offers a more pragmatic and often more accurate approach.

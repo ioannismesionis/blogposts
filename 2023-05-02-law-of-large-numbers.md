@@ -1,10 +1,3 @@
----
-title: The Law of Large Numbers!
-subtitle: How to Make Sense of Randomness.
-katex: true
-tags: [statistics, law-of-large-numbers]
----
-
 The law of large numbers is a statistical theorem that states that as the number of identically distributed, randomly generated variables increases, their sample mean approaches their theoretical mean.
 
 ## Mathematical Foundation

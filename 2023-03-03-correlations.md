@@ -1,10 +1,3 @@
----
-title: An overview of variable correlations!
-subtitle: Hey, variable - are we (co)related?
-katex: true
-tags: [machine-learning, mathematics, correlation]
----
-
 Correlations are like two peas in a pod - they just can't be separated. In machine learning, correlations are like the secret ingredient that makes our models stand out. They help us identify patterns and relationships between features, and guide us in selecting the most relevant variables to predict our target variable. Correlations are the spice that brings flavor to our machine learning recipes, and the glue that binds our models together. So, let's embrace correlations, and make some deliciously accurate models!
 
 ## Correlations

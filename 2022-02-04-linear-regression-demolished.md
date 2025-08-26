@@ -1,10 +1,3 @@
----
-title: Machine Learning - Demolished!
-subtitle: Linear Regression Demolished!
-katex: true
-tags: [machine-learning, mathematics, linear-regression]
----
-
 Having a passion for mathematics, I was delighted to find out that Machine Learning models are using algebra under their hoods. As a result, I decided to create this mini-blog series called "Machine Learning Demolished!" The purpose of the blogs is for me to refresh my memory on the optimization techniques around the Loss function used in the most common Machine Learning models and create some sort of machine learning "mind palace" as Sherlock Holmes says. I hope that you will find the following information as useful as I did.
 
 ## Linear Regression - Demolished
