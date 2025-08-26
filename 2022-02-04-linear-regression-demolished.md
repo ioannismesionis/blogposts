@@ -1,10 +1,7 @@
 ---
-layout: post
 title: Machine Learning - Demolished!
 subtitle: Linear Regression Demolished!
 katex: true
-image: /img/linear-regression/brain.png
-bigimg: /img/linear-regression/yellow-mathematics.jpeg
 tags: [machine-learning, mathematics, linear-regression]
 ---
 

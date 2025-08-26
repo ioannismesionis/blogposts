@@ -1,10 +1,7 @@
 ---
-layout: post
 title: An overview of variable correlations!
 subtitle: Hey, variable - are we (co)related?
 katex: true
-image: /img/correlations/small-correlation-and-causation.webp
-bigimg: /img/correlations/correlation_big_logo.png
 tags: [machine-learning, mathematics, correlation]
 ---
 

@@ -1,10 +1,7 @@
 ---
-layout: post
 title: AdaBoost for the win!
 subtitle: Adaptive Boosting - The first of its kind!
 katex: true
-image: /img/adaboost/adaboost-small.png
-bigimg: /img/adaboost/adaboost-big.png
 tags: [machine-learning, boosting, decision-trees, random-forest]
 ---
 

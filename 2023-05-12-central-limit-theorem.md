@@ -1,10 +1,7 @@
 ---
-layout: post
 title: Central Limit Theorem - A Magic Wand for Inference
 subtitle: How the CLT turns any data into gold!
 katex: true
-image: /img/central-limit-theorem/bell_small.png
-bigimg: /img/central-limit-theorem/magic.webp
 tags: [statistics, central-limit-theorem, normal-distribution]
 ---
 

@@ -187,12 +187,9 @@ Posts follow the pattern: `YYYY-MM-DD-post-title.md`
 ### Frontmatter Structure
 ```yaml
 ---
-layout: post
 title: "Post Title"
 subtitle: "Descriptive subtitle"
-katex: true  # Enable mathematical notation
-image: /img/topic/small-image.png
-bigimg: /img/topic/large-image.jpg
+katex: true  # Enable mathematical notation (for math-heavy posts)
 tags: [tag1, tag2, tag3]
 ---
 ```

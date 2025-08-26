@@ -1,10 +1,7 @@
 ---
-layout: post
 title: Machine Learning - Demolished!
 subtitle: Logistic Regression Demolished!
 katex: true
-image: /img/logistic-regression/log-reg-small.png
-bigimg: /img/logistic-regression/log-reg-big.webp
 tags: [machine-learning, mathematics, logistic-regression, classification]
 ---
 

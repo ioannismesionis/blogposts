@@ -1,10 +1,7 @@
 ---
-layout: post
 title: The Art of Comparing Apples to Oranges!
 subtitle: Relative Estimation for Data Science teams.
 katex: true
-image: /img/jira-story-estimation/tshirt-small.png
-bigimg: /img/jira-story-estimation/estimation-large.webp
 tags: [scrum, relative-estimation, sprint-planning]
 ---
 
