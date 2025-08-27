@@ -29,7 +29,7 @@ Let's break down what we're working with:
 $$X = \mathbf{x_1}, \mathbf{x_2}, \dots , \mathbf{x_D}$$
 
 where each $\mathbf{x}_{i}$ looks like:
-$$ \mathbf{x}_{i} = \begin{pmatrix} x_{1}^{(i)} \\ x_{2}^{(i)} \\ \vdots \\ x_{N}^{(i)} \end{pmatrix} , \quad i=1,2, \dots, D $$
+$$\mathbf{x}_{i} = \left[\begin{matrix} x_{1}^{(i)} \\ x_{2}^{(i)} \\ \vdots \\ x_{N}^{(i)} \end{matrix}\right] , \quad i=1,2, \dots, D$$
 
 **Response Variable:** The continuous-valued target we want to predict:
 $$y_{n},\space n = 1, 2, \dots , N$$
@@ -204,11 +204,13 @@ To find the minimum, we take the derivative and set it to zero:
 $$\nabla E_{D}(\boldsymbol{w}) = 0$$
 
 Working through the calculus:
-$$\begin{split}
+$$
+\begin{split}
 \nabla E_{D}(\boldsymbol{w}) &= \frac{1}{2} \cdot 2 \sum\limits_{n=1}^{N}(\boldsymbol{y}_{n} - \boldsymbol{w}^T\boldsymbol{\phi(\mathbf{x_n})})(-\boldsymbol{\phi(\mathbf{x_n})})\\
 &= \sum\limits_{n=1}^{N}(\boldsymbol{y}_{n} - \boldsymbol{w}^{T}\boldsymbol{\phi(\mathbf{x_n})})\boldsymbol{\phi(\mathbf{x_n})^{T}}\\
 &= \sum\limits_{n=1}^{N}(\boldsymbol{y}_{n}\boldsymbol{\phi(\mathbf{x_n})^{T}} - \boldsymbol{w}^{T}\boldsymbol{\phi(\mathbf{x_n})\phi(\mathbf{x_n})^{T}})
-\end{split}$$
+\end{split}
+$$
 
 ## 4.3 The Normal Equations: Your Final Answer
 
@@ -226,12 +228,12 @@ $$\boldsymbol{\hat{w}} = (\boldsymbol{\Phi^{T}\Phi})^{-1}\boldsymbol{\Phi^{T}} \
 
 The $\boldsymbol{\Phi}$ matrix (called the design matrix) organizes all your basis function evaluations:
 
-$$\boldsymbol{\Phi} = \begin{pmatrix}
+$$\boldsymbol{\Phi} = \left[\begin{matrix}
 \phi_{0}(x_{1}) & \phi_{1}(x_{1}) & \cdots & \phi_{D}(x_{1})\\
 \phi_{0}(x_{2}) & \phi_{1}(x_{2}) & \cdots & \phi_{D}(x_{2})\\
 \vdots & \vdots & \ddots & \vdots \\
 \phi_{0}(x_{N}) & \phi_{1}(x_{N}) & \cdots & \phi_{D}(x_{N})\\
-\end{pmatrix}$$
+\end{matrix}\right]$$
 
 Each row represents one data point, each column represents one basis function evaluation.
 
