@@ -28,9 +28,8 @@ Let's break down what we're working with:
 
 $$X = \mathbf{x_1}, \mathbf{x_2}, \dots , \mathbf{x_D}$$
 
-where each $\mathbf{x}_{i}$ is a column vector containing the i-th feature across all N data points:
-
-$$\mathbf{x}_{i} = \left[ x_{1}^{(i)}, x_{2}^{(i)}, \ldots, x_{N}^{(i)} \right]^T, \quad i=1,2, \dots, D$$
+where each $\mathbf{x}_{i}$ looks like:
+$$ \mathbf{x}_{i} = \begin{pmatrix} x_{1}^{(i)} \\ x_{2}^{(i)} \\ \vdots \\ x_{N}^{(i)} \end{pmatrix} , \quad i=1,2, \dots, D $$
 
 **Response Variable:** The continuous-valued target we want to predict:
 $$y_{n},\space n = 1, 2, \dots , N$$
@@ -229,17 +228,12 @@ $$\boldsymbol{\hat{w}} = (\boldsymbol{\Phi^{T}\Phi})^{-1}\boldsymbol{\Phi^{T}} \
 
 The $\boldsymbol{\Phi}$ matrix (called the design matrix) organizes all your basis function evaluations:
 
-The design matrix $\boldsymbol{\Phi}$ is an $N \times (D+1)$ matrix where each row represents one data point:
-
-$$\boldsymbol{\Phi}_{n,d} = \phi_{d}(x_n) \quad \text{for } n=1,\ldots,N \text{ and } d=0,\ldots,D$$
-
-In expanded form:
-$$\boldsymbol{\Phi} = \begin{bmatrix}
-\phi_{0}(x_{1}) & \phi_{1}(x_{1}) & \cdots & \phi_{D}(x_{1}) \\
-\phi_{0}(x_{2}) & \phi_{1}(x_{2}) & \cdots & \phi_{D}(x_{2}) \\
+$$\boldsymbol{\Phi} = \begin{pmatrix}
+\phi_{0}(x_{1}) & \phi_{1}(x_{1}) & \cdots & \phi_{D}(x_{1})\\
+\phi_{0}(x_{2}) & \phi_{1}(x_{2}) & \cdots & \phi_{D}(x_{2})\\
 \vdots & \vdots & \ddots & \vdots \\
-\phi_{0}(x_{N}) & \phi_{1}(x_{N}) & \cdots & \phi_{D}(x_{N})
-\end{bmatrix}$$
+\phi_{0}(x_{N}) & \phi_{1}(x_{N}) & \cdots & \phi_{D}(x_{N})\\
+\end{pmatrix}$$
 
 Each row represents one data point, each column represents one basis function evaluation.
 
