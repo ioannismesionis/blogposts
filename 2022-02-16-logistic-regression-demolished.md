@@ -35,7 +35,7 @@ Just like linear regression, we start with our familiar setup:
 $$X = \mathbf{x_1}, \mathbf{x_2}, \dots , \mathbf{x_D}$$
 
 where each observation looks like:
-$$\mathbf{x}_{i} = \begin{pmatrix} x_{1}^{(i)} \\ x_{2}^{(i)} \\ \vdots \\ x_{N}^{(i)} \end{pmatrix}, \quad i=1,2, \dots, D$$
+$\mathbf{x_i}$ = $$\begin{pmatrix} x_1^{(i)} \\ x_2^{(i)} \\ \vdots \\ x_N^{(i)} \end{pmatrix}$$, $\quad i=1,2, \dots, D$
 
 **Binary Response Variable:** Instead of continuous values, we have binary outcomes:
 $$y_{n} \in \{0, 1\}, \quad n = 1, 2, \dots , N$$
