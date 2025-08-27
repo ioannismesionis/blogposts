@@ -34,8 +34,9 @@ Just like linear regression, we start with our familiar setup:
 **Training Data:** N training examples with D-dimensional input features:
 $$X = \mathbf{x_1}, \mathbf{x_2}, \dots , \mathbf{x_D}$$
 
-where each observation looks like:
-$$\mathbf{x}_{i} = \left[\begin{matrix} x_{1}^{(i)} \\ x_{2}^{(i)} \\ \vdots \\ x_{N}^{(i)} \end{matrix}\right], \quad i=1,2, \dots, D$$
+where each feature vector $\mathbf{x}_{i}$ contains the i-th feature across all N observations:
+
+$$\mathbf{x}_{i} = \left[ x_{1}^{(i)}, x_{2}^{(i)}, \ldots, x_{N}^{(i)} \right]^T, \quad i=1,2, \dots, D$$
 
 **Binary Response Variable:** Instead of continuous values, we have binary outcomes:
 $$y_{n} \in \{0, 1\}, \quad n = 1, 2, \dots , N$$
